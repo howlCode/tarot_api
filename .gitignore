@@ -11,6 +11,8 @@
 /db/*.sqlite3
 /db/*.sqlite3-journal
 
+/lib/images/*
+
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
