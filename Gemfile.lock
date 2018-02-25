@@ -35,6 +35,11 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.3)
+    active_model_serializers (0.10.7)
+      actionpack (>= 4.1, < 6)
+      activemodel (>= 4.1, < 6)
+      case_transform (>= 0.2)
+      jsonapi-renderer (>= 0.1.1.beta1, < 0.3)
     activejob (5.1.5)
       activesupport (= 5.1.5)
       globalid (>= 0.3.6)
@@ -52,6 +57,8 @@ GEM
     arel (8.0.0)
     builder (3.2.3)
     byebug (10.0.0)
+    case_transform (0.2)
+      activesupport
     climate_control (0.2.0)
     cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
@@ -70,6 +77,7 @@ GEM
       activesupport (>= 4.2.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
+    jsonapi-renderer (0.2.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -92,6 +100,7 @@ GEM
       mini_portile2 (~> 2.3.0)
     puma (3.11.2)
     rack (2.0.4)
+    rack-cors (1.0.2)
     rack-test (0.8.2)
       rack (>= 1.0, < 3)
     rails (5.1.5)
@@ -166,12 +175,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_model_serializers
   byebug
   database_cleaner (~> 1.5)
   factory_bot_rails
   listen (>= 3.0.5, < 3.2)
   paperclip!
   puma (~> 3.7)
+  rack-cors
   rails (~> 5.1.5)
   rspec-rails
   shoulda-matchers (~> 3.0)
