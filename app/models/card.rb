@@ -6,4 +6,5 @@ class Card < ApplicationRecord
   def face_image_url
     'http://localhost:3000' + face_image(:medium)
   end
+
 end

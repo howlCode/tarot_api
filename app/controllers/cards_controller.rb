@@ -32,6 +32,10 @@ class CardsController < ApplicationController
     @card.destroy
   end
 
+  def three_card_spread
+    @cards = three_card_spread
+  end
+
   private
     def set_card
       @card = Card.find(params[:id])
@@ -40,4 +44,5 @@ class CardsController < ApplicationController
     def card_params
       params.require(:card).permit(:name, :short_meaning, :full_meaning, :up, :reverse, :face_image)
     end
+
 end
