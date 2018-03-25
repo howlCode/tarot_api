@@ -1,7 +1,6 @@
 require 'nokogiri'
 require 'open-uri'
 
-# Pry.start(binding)
 card_name_major = ['the-fool', 'the-magician', 'the-empress', 'the-emperor', 'the-high-priestess',
              'the-hierophant', 'the-lovers', 'the-chariot', 'justice', 'temperance',
              'strength', 'the-hermit', 'the-wheel-of-fortune', 'the-hanged-man',

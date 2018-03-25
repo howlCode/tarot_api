@@ -32,10 +32,6 @@ class CardsController < ApplicationController
     @card.destroy
   end
 
-  def three_card_spread
-    @cards = three_card_spread
-  end
-
   private
     def set_card
       @card = Card.find(params[:id])

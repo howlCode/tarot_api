@@ -7,4 +7,8 @@ class Card < ApplicationRecord
     'http://localhost:3000' + face_image(:medium)
   end
 
+  # def face_image_url
+  #   'http://tarot.howlcode.com' + face_image(:medium)
+  # end
+
 end
