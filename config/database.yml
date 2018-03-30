@@ -27,7 +27,16 @@ production:
   adapter: postgresql
   host: ''
   database: tarot_api_production
-  username: deploy
+  username: postgres
   password:
+  encoding: unicode
+  pool: 5
+
+development:
+  adapter: postgresql
+  host: localhost
+  database: tarot_api
+  username: postgres
+  password: postgres
   encoding: unicode
   pool: 5

@@ -1,5 +1,11 @@
 class SpreadsController < ApplicationController
 
+  def random_card
+    @cards = Card.all
+    @random_card = @cards.sample(1)
+    render json: @random_card
+  end
+
   def shuffle
     @cards = Card.all
     @shuffled_cards = @cards.shuffle
