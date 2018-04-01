@@ -38,20 +38,23 @@ Each card has unique information which you can grab using the identifiers of the
 ### axios example
 
 ```javascript
+
+const getCardsUrl = 'https://tarot.howlcode.com/cards';
+const cardContainer = document.querySelector('.cards-container');
+
 function renderCards() {
-	axios.get(getCardsUrl)
-		.then(function (response) {
-			const cards = response.data;
-			cardContainer.innerHTML = `
-		    <ul class="card-grid">
-		        ${cards.map(card => `
-              <li><img src=${card.face_image_url} class="card-img"></img></li>
-              <li>${card.name}</li>
-              <li>${card.short_meaning}</li>
-		        	`).join('')}
-		    </ul>
-		`;
-	});
+  axios.get(getCardsUrl)
+  .then(function (response) {
+     const cards = response.data;
+	cardContainer.innerHTML = `
+	  <ul class="card-grid">
+          ${cards.map(card => `
+            <li><img src=${card.face_image_url} class="card-img"></img></li>
+            <li>${card.name}</li>
+            <li>${card.short_meaning}</li>`).join('')}
+          </ul>
+	`;
+  });
 }
 ```
 
