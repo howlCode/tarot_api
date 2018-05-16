@@ -34,9 +34,14 @@ production:
 
 development:
   adapter: postgresql
-  host: localhost
-  database: tarot_api
+  database: tarot_api_testing
   username: postgres
   password: postgres
-  encoding: unicode
-  pool: 5
+  template: template0
+
+test:
+  adapter: postgresql
+  database: tarot_api_testing
+  username: postgres
+  password: postgres
+  template: template0
