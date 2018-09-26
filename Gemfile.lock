@@ -213,7 +213,6 @@ DEPENDENCIES
   capistrano-passenger (~> 0.2.0)
   capistrano-rails (~> 1.2)
   capistrano-rbenv (~> 2.1)
-  coderay
   database_cleaner
   factory_bot_rails
   faker
@@ -224,11 +223,11 @@ DEPENDENCIES
   pry-rails
   puma (~> 3.7)
   rack-cors
-  rails (~> 5.1.5)
+  rails (~> 5.1.6)
   rspec-rails
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
 
 BUNDLED WITH
-   1.16.3
+   1.16.5
