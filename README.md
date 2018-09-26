@@ -9,11 +9,11 @@ Images from the original rider-waite deck are used as they are public domain.
 
 ## How can I use it?
 
-Please visit [Reactive Tarot](https://tarot-react.howlcode.com/api/v1) for a visual example I've created using the API.
+Please visit [Reactive Tarot](https://tarot-react.howlcode.com) for a visual example I've created using the API.
 
 You may grab JSON (cards) from the API using these unique endpoints:
 
-_All are prefixed with https://tarot.howlcode.com_
+_All are prefixed with https://tarot.howlcode.com/api/v1_
 
 1. '/cards' _Will grab all cards as one object_
 
