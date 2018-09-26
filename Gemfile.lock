@@ -213,6 +213,7 @@ DEPENDENCIES
   capistrano-passenger (~> 0.2.0)
   capistrano-rails (~> 1.2)
   capistrano-rbenv (~> 2.1)
+  coderay
   database_cleaner
   factory_bot_rails
   faker
