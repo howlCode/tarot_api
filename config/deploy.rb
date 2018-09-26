@@ -1,5 +1,5 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.11.0"
+lock "~> 3.10.1"
 
 set :application, "tarot_api"
 set :repo_url, "https://github.com/howlCode/tarot_api.git"
