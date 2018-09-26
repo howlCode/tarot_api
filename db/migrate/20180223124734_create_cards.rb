@@ -2,10 +2,10 @@ class CreateCards < ActiveRecord::Migration[5.1]
   def change
     create_table :cards do |t|
       t.string :name, null: false
-      t.string :short_meaning, null: false
+      t.string :summary, null: false
       t.text :full_meaning, null: false
-      t.string :up, null: false
-      t.string :reverse, null: false
+      t.string :upright, null: false
+      t.string :reversed, null: false
 
       t.timestamps
     end

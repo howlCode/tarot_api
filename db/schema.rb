@@ -17,10 +17,10 @@ ActiveRecord::Schema.define(version: 20180223125811) do
 
   create_table "cards", force: :cascade do |t|
     t.string "name", null: false
-    t.string "short_meaning", null: false
+    t.string "summary", null: false
     t.text "full_meaning", null: false
-    t.string "up", null: false
-    t.string "reverse", null: false
+    t.string "upright", null: false
+    t.string "reversed", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "face_image_file_name"

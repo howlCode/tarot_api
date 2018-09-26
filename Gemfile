@@ -35,8 +35,15 @@ gem 'capistrano-rbenv', '~> 2.1'
 gem 'rack-cors', :require => 'rack/cors'
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry-byebug'
+  gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
+end
+
+group :test do
+  gem 'database_cleaner'
+  gem 'faker'
 end
 
 group :development do

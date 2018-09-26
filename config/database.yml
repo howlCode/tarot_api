@@ -25,23 +25,25 @@
 #   database: db/production.sqlite3
 production:
   adapter: postgresql
-  host: ''
+  host: ""
   database: tarot_api_production
   username: postgres
-  password:
+  ? password
   encoding: unicode
   pool: 5
 
 development:
+  host: "localhost"
+  port: 5432
   adapter: postgresql
-  database: tarot_api_testing
+  database: tarot_api_development
   username: postgres
   password: postgres
-  template: template0
 
 test:
+  host: "localhost"
+  port: 5432
   adapter: postgresql
   database: tarot_api_testing
   username: postgres
   password: postgres
-  template: template0
