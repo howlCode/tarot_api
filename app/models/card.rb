@@ -3,12 +3,12 @@ class Card < ApplicationRecord
   validates_attachment_content_type :face_image, content_type: /\Aimage\/.*\z/
   validates :name, :summary, :full_meaning, :upright, :reversed, :face_image, presence: true
 
-  def face_image_url
-    'http://localhost:3000' + face_image(:medium)
-  end
-
   # def face_image_url
-  #   'https://tarot.howlcode.com' + face_image(:medium)
+  #   'http://localhost:3000' + face_image(:medium)
   # end
+
+  def face_image_url
+    'https://tarot.howlcode.com' + face_image(:medium)
+  end
 
 end
