@@ -49,11 +49,9 @@ function renderCards() {
   axios.get(getCardsUrl).then(function(response) {
     const cards = response.data;
     cardContainer.innerHTML = `
-	  <ul class="card-grid">
-          ${cards
-            .map(
-              card => `
-            <li><img src=${card.face_image_url} class="card-img"></img></li>
+	  <ul>
+          ${cards.map(card => `
+            <li><img src=${card.face_image_url}></li>
             <li>${card.name}</li>
             <li>${card.summary}</li>`
             )
