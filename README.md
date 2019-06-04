@@ -17,13 +17,13 @@ _All are prefixed with https://tarot.howlcode.com/api/v1_
 
 1. '/cards' _Will grab all cards as one object_
 
-2. '/shuffled' _Pulls ALL cards pre-shuffled_
+2. '/spreads/shuffled' _Pulls ALL cards pre-shuffled_
 
-3. '/random_card' _Pulls off one random card_
+3. '/spreads/random_card' _Pulls off one random card_
 
-4. '/three_cards' _Pulls of three random cards_
+4. '/spreads/three_cards' _Pulls of three random cards_
 
-5. '/celtic_cross' _Grabs 10 random cards_
+5. '/spreads/celtic_cross' _Grabs 10 random cards_
 
 Each card has unique information which you can grab using the identifiers of the object:
 
@@ -42,7 +42,7 @@ Each card has unique information which you can grab using the identifiers of the
 ### axios example
 
 ```javascript
-const getCardsUrl = "https://tarot.howlcode.com/cards";
+const getCardsUrl = "https://tarot.howlcode.com/api/v1/cards";
 const cardContainer = document.querySelector(".cards-container");
 
 function renderCards() {
