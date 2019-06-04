@@ -11,11 +11,11 @@ Images from the original rider-waite deck are used as they are public domain.
 
 Please visit [Tarot Space](https://tarot-space.howlcode.com) for a visual example I've created using the API.
 
-You may grab JSON (cards) from the API using these unique endpoints:
+You may draw cards from the API using these unique endpoints:
 
-_All are prefixed with https://tarot.howlcode.com/api/v1_
+_All are prefixed with /api/v1_
 
-1. '/cards' _Will grab all cards as one object_
+1. '/cards' _Draw all the cards in order_
 
 2. '/spreads/shuffled' _Draws ALL cards randomly shuffled_
 
@@ -27,7 +27,7 @@ _All are prefixed with https://tarot.howlcode.com/api/v1_
 
 Each card has unique information which you can grab using the identifiers of the object:
 
-1. 'face_image_url' _a 300x300px image of the card facing_
+1. 'face_image_url' _a 300x300px image of the card face_
 
 2. 'name' _The card's name_
 
@@ -37,29 +37,6 @@ Each card has unique information which you can grab using the identifiers of the
 
 5. 'upright' _When the card is upright, these are the keywords it can mean_
 
-6. 'reversed' _When the card is reverse, these are the keywords applied to its meaning_
-
-### axios example
-
-```javascript
-const getCardsUrl = "https://tarot.howlcode.com/api/v1/cards";
-const cardContainer = document.querySelector(".cards-container");
-
-function renderCards() {
-  axios.get(getCardsUrl).then(function(response) {
-    const cards = response.data;
-    cardContainer.innerHTML = `
-	  <ul>
-          ${cards.map(card => `
-            <li><img src=${card.face_image_url}></li>
-            <li>${card.name}</li>
-            <li>${card.summary}</li>`
-            )
-            .join("")}
-          </ul>
-	`;
-  });
-}
-```
+6. 'reversed' _When the card is reverse, these are the keywords applicable to its meaning_
 
 # Happy trails!
