@@ -19,7 +19,7 @@ _All are prefixed with https://tarot.howlcode.com/api/v1_
 
 2. '/spreads/shuffled' _Draws ALL cards randomly shuffled_
 
-3. '/spreads/random_card' _Draws off one random card_
+3. '/spreads/random_card' _Draws one random card_
 
 4. '/spreads/three_cards' _Draws three random cards_
 
