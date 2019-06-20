@@ -13,7 +13,7 @@ Please visit [Tarot Space](https://tarot-space.howlcode.com) for a visual exampl
 
 You may draw cards from the API using these unique endpoints:
 
-_URL: https://tarot.howlcode.com/api/vi_
+_URL: https://tarot.howlcode.com/api/v1_
 
 1. '/cards' _Draw all the cards in order_
 
