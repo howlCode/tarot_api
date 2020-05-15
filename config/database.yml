@@ -36,7 +36,7 @@ development:
   host: "localhost"
   port: 5432
   adapter: postgresql
-  database: tarot_api_development
+  database: tarot_api_dev
   username: postgres
   password: postgres
 
@@ -44,6 +44,6 @@ test:
   host: "localhost"
   port: 5432
   adapter: postgresql
-  database: tarot_api_testing
+  database: tarot_api_test
   username: postgres
   password: postgres

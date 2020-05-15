@@ -6,8 +6,8 @@
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
-server '159.65.36.241', user: 'deploy', roles: %w{app db web}
 
+server '161.35.96.31', user: 'deploy', roles: %w{app db web}
 
 # role-based syntax
 # ==================
@@ -42,7 +42,7 @@ server '159.65.36.241', user: 'deploy', roles: %w{app db web}
 # Global options
 # --------------
 #  set :ssh_options, {
-#    keys: %w(/home/rlisowski/.ssh/id_rsa),
+#    keys: %w(/home/user_name/.ssh/id_rsa),
 #    forward_agent: false,
 #    auth_methods: %w(password)
 #  }
