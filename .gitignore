@@ -18,6 +18,7 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+storage/
 
 .byebug_history
 
