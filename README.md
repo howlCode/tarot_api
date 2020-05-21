@@ -39,4 +39,9 @@ Each card has unique information which you can grab using the identifiers of the
 
 6. 'reversed' _When the card is reverse, these are the keywords applicable to its meaning_
 
+# First deploy
+heroku run rails db:create
+heroku run rails db:migrate
+heroku run rails read_cards:load_cards
+
 # Happy trails!
