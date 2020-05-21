@@ -13,7 +13,6 @@ gem 'rails', '~> 6'
 gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
-gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 gem 'active_model_serializers'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
@@ -22,17 +21,12 @@ gem 'active_model_serializers'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-gem "mini_magick"
-
 # Use Capistrano for deployment
 gem 'capistrano', '~> 3.11'
 gem 'capistrano-rails', '~> 1.4'
 gem 'capistrano-passenger', '~> 0.2.0'
 gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
 
-# Bug in net-ssh, requires these gems. https://github.com/net-ssh/net-ssh/issues/565
-gem 'ed25519', '>= 1.2', '< 2.0'
-gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors', :require => 'rack/cors'

@@ -5,11 +5,11 @@ RSpec.describe Api::V1::CardsController, type: :controller do
   let(:card) { create(:card) }
 
   let(:valid_attributes) {
-    { name: card.name, summary: card.summary, full_meaning: card.full_meaning, upright: card.upright, reversed: card.reversed, face_image: Rack::Test::UploadedFile.new("#{Rails.root}/spec/support/fixtures/deckback.jpg", 'image/jpg') }
+    { name: card.name, summary: card.summary, full_meaning: card.full_meaning, upright: card.upright, reversed: card.reversed, image_url: card.image_url }
   }
 
   let(:invalid_attributes) {
-    { name: nil, summary: nil, full_meaning: nil, upright: nil, reversed: nil, face_image: nil }
+    { name: nil, summary: nil, full_meaning: nil, upright: nil, reversed: nil, image_url: nil }
   }
 
   describe 'GET #index' do
