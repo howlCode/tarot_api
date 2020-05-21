@@ -12,12 +12,16 @@
 
 ActiveRecord::Schema.define(version: 2018_02_23_125811) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "cards", force: :cascade do |t|
     t.string "name", null: false
     t.string "summary", null: false
     t.text "full_meaning", null: false
-    t.string "upright", null: false
-    t.string "reversed", null: false
+    t.string "upright"
+    t.string "reversed"
+    t.string "image", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "face_image_file_name"
