@@ -12,6 +12,8 @@ namespace :read_cards do
       new_card.summary = card["summary"]
       new_card.full_meaning = card["full_meaning"]
       new_card.image = card["image"]
+      new_card.upright = card['upright']
+      new_card.reversed = card['reversed']
       new_card.save
     end
   end
