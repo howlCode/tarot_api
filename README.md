@@ -43,10 +43,10 @@ _Draws 10 random cards_
 
 Each card has unique information which you can grab using the identifiers of the object:
 
-_a 300x300px image of the card face_
+_an image of the card face_
 
 ```
-face_image_url
+image
 ```
 
 _The card's name_
@@ -77,6 +77,18 @@ _When the card is reverse, these are the keywords applicable to its meaning_
 
 ```
 reversed
+```
+
+## Installing/Running
+
+```
+clone repo
+bundle install
+rails db:create
+rails db:migrate
+rails read_cards:load_cards
+rails server
+hit api at localhost:3000/api/v1
 ```
 
 # Happy trails!
