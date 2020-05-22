@@ -40,7 +40,7 @@ module Api
         end
 
         def card_params
-          params.require(:card).permit(:name, :summary, :full_meaning, :upright, :reversed, :image_url)
+          params.require(:card).permit(:name, :summary, :full_meaning, :upright, :reversed, :image)
         end
 
     end

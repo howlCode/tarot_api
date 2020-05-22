@@ -6,7 +6,7 @@ class CreateCards < ActiveRecord::Migration[5.1]
       t.text :full_meaning, null: false
       t.string :upright, null: false
       t.string :reversed, null: false
-      t.string :image_url, null: false
+      t.string :image, null: false
 
       t.timestamps
     end

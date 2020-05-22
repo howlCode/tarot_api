@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2018_02_23_124734) do
     t.text "full_meaning", null: false
     t.string "upright", null: false
     t.string "reversed", null: false
-    t.string "image_url", null: false
+    t.string "image", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
