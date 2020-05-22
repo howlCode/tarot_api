@@ -1,3 +1,3 @@
 class CardSerializer < ActiveModel::Serializer
-  attributes :id, :name, :face_image_url, :summary, :full_meaning, :upright, :reversed
+  attributes :card_index, :name, :image, :summary, :full_meaning, :upright, :reversed
 end

@@ -27,8 +27,6 @@ production:
   adapter: postgresql
   host: ""
   database: tarot_api_production
-  username: postgres
-  ? password
   encoding: unicode
   pool: 5
 
