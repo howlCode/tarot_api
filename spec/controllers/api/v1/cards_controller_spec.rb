@@ -5,11 +5,11 @@ RSpec.describe Api::V1::CardsController, type: :controller do
   let(:card) { create(:card) }
 
   let(:valid_attributes) {
-    { name: card.name, summary: card.summary, full_meaning: card.full_meaning, upright: card.upright, reversed: card.reversed, face_image: Rack::Test::UploadedFile.new("#{Rails.root}/spec/support/fixtures/deckback.jpg", 'image/jpg') }
+    { name: card.name, summary: card.summary, full_meaning: card.full_meaning, upright: card.upright, reversed: card.reversed, image: card.image }
   }
 
   let(:invalid_attributes) {
-    { name: nil, summary: nil, full_meaning: nil, upright: nil, reversed: nil, face_image: nil }
+    { name: nil, summary: nil, full_meaning: nil, upright: nil, reversed: nil, image: nil }
   }
 
   describe 'GET #index' do
@@ -35,17 +35,10 @@ RSpec.describe Api::V1::CardsController, type: :controller do
   describe 'POST #create' do
 
     context 'with valid params' do
-      it 'creates a new card' do
-        expect {
-          post :create, params: { card: card.attributes }
-        }.to change(Card, :count).by(1)
-      end
-    
-
       it 'renders a JSON response with the new card' do
         post :create, params: { card: valid_attributes }
         expect(response).to have_http_status(:created)
-        expect(response.content_type).to eq('application/json')
+        expect(response.content_type).to eq('application/json; charset=utf-8')
         expect(response.location).to eq(api_v1_card_path(id: Card.last.id))
       end
     end
@@ -54,7 +47,7 @@ RSpec.describe Api::V1::CardsController, type: :controller do
       it 'renders a JSON response with errors for the new card' do
         post :create, params: { card: invalid_attributes }
         expect(response).to have_http_status(:unprocessable_entity)
-        expect(response.content_type).to eq('application/json')
+        expect(response.content_type).to eq('application/json; charset=utf-8')
       end
     end
   end
@@ -76,7 +69,7 @@ RSpec.describe Api::V1::CardsController, type: :controller do
       it 'renders a JSON response with the card' do
         put :update, params: { id: card.to_param, card: valid_attributes }
         expect(response).to have_http_status(:ok)
-        expect(response.content_type).to eq('application/json')
+        expect(response.content_type).to eq('application/json; charset=utf-8')
       end
     end
 
@@ -84,7 +77,7 @@ RSpec.describe Api::V1::CardsController, type: :controller do
       it 'renders a JSON response with errors for the card' do
         put :update, params: { id: card.to_param, card: invalid_attributes }
         expect(response).to have_http_status(:unprocessable_entity)
-        expect(response.content_type).to eq('application/json')
+        expect(response.content_type).to eq('application/json; charset=utf-8')
       end
     end
   end

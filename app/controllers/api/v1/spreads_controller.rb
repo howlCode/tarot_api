@@ -1,6 +1,6 @@
 module Api
   module V1
-    class SpreadsController < ApplicationController
+    class SpreadsController < ActionController::API
 
       def random_card
         @cards = Card.all

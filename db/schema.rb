@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(version: 2018_02_23_124734) do
     t.string "name", null: false
     t.string "summary", null: false
     t.text "full_meaning", null: false
-    t.string "upright"
-    t.string "reversed"
+    t.string "upright", null: false
+    t.string "reversed", null: false
     t.string "image", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

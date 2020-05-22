@@ -1,43 +1,95 @@
-# Tarot Cards API
+# Tarot API
 
-## What is it?
-
-A rails 5 API for interacting with a virtual tarot deck. Users can
-shuffle and/or draw cards at random into some different spreads.
-Cards are fully fleshed out with images, summaries, full meanings, and keywords for upright and reversed card positions.
-Images from the original rider-waite deck are used as they are public domain.
+An API for interacting with a deck of tarot cards. Cards can be "drawn" one by one,
+shuffled, and in a few various spreads(celtic cross, three card, etc). Images are
+from the Rider-Waite tarot deck and they are public domain. The information on
+the cards has been pulled from https://www.simplytarot.com
 
 ## How can I use it?
-
-Please visit [Tarot Space](https://tarot-space.howlcode.com) for a visual example I've created using the API.
 
 You may draw cards from the API using these unique endpoints:
 
 _URL: https://tarot.howlcode.com/api/v1_
 
-1. '/cards' _Draw all the cards in order_
+_Draw all the cards in order_
 
-2. '/spreads/shuffled' _Draws ALL cards randomly shuffled_
+```
+ /cards
+```
 
-3. '/spreads/random_card' _Draws one random card_
+_Draws ALL cards randomly shuffled_
 
-4. '/spreads/three_cards' _Draws three random cards_
+```
+/spreads/shuffled
+```
 
-5. '/spreads/celtic_cross' _Draws 10 random cards_
+_Draws one random card_
+
+```
+/spreads/random_card
+```
+
+_Draws three random cards_
+
+```
+/spreads/three_cards
+```
+
+_Draws 10 random cards_
+
+```
+/spreads/celtic_cross
+```
 
 Each card has unique information which you can grab using the identifiers of the object:
 
-1. 'face_image_url' _a 300x300px image of the card face_
+_an image of the card face_
 
-2. 'name' _The card's name_
+```
+image
+```
 
-3. 'summary' _A summary of the card's meaning_
+_The card's name_
 
-4. 'full_meaning' _A more verbose description of what the card means_
+```
+name
+```
 
-5. 'upright' _When the card is upright, these are the keywords it can mean_
+_A summary of the card's meaning_
 
-6. 'reversed' _When the card is reverse, these are the keywords applicable to its meaning_
+```
+summary
+```
+
+_A more verbose description of what the card means_
+
+```
+full_meaning
+```
+
+_When the card is upright, these are the keywords it can mean_
+
+```
+upright
+```
+
+_When the card is reverse, these are the keywords applicable to its meaning_
+
+```
+reversed
+```
+
+## Installing/Running
+
+```
+clone repo
+bundle install
+rails db:create
+rails db:migrate
+rails read_cards:load_cards
+rails server
+hit api at localhost:3000/api/v1
+```
 
 # First deploy
 heroku run rails db:schema:load DISABLE_DATABASE_ENVIRONMENT_CHECK=1
