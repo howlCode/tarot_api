@@ -6,7 +6,7 @@ namespace :read_cards do
     Card.delete_all
     cards = JSON.parse(File.read("lib/cards.json"))
 
-    cards.each do |card|
+    cards.each_with_index do |card, i|
       new_card = Card.new
       new_card.name = card["name"]
       new_card.summary = card["summary"]
@@ -14,6 +14,8 @@ namespace :read_cards do
       new_card.image = card["image"]
       new_card.upright = card['upright']
       new_card.reversed = card['reversed']
+      new_card.card_index = i
+
       new_card.save
     end
   end
