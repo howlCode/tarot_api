@@ -5,6 +5,6 @@ FactoryBot.define do
     full_meaning { Faker::Lovecraft.sentence }
     upright { Faker::Lovecraft.sentence }
     reversed { Faker::Lovecraft.sentence }
-    face_image { File.new("#{Rails.root}/spec/support/fixtures/deckback.jpg") }
+    image { Faker::Internet.url }
   end
 end

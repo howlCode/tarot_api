@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_22_014132) do
+ActiveRecord::Schema.define(version: 2018_02_23_124734) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,11 +24,6 @@ ActiveRecord::Schema.define(version: 2020_05_22_014132) do
     t.string "image", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "face_image_file_name"
-    t.string "face_image_content_type"
-    t.bigint "face_image_file_size"
-    t.datetime "face_image_updated_at"
-    t.integer "card_index"
   end
 
 end

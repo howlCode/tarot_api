@@ -36,11 +36,11 @@ module Api
 
       private
         def set_card
-          @card = Card.find_by(card_index: params[:id])
+          @card = Card.find_by(id: params[:id])
         end
 
         def card_params
-          params.require(:card).permit(:name, :summary, :full_meaning, :upright, :reversed, :face_image)
+          params.require(:card).permit(:name, :summary, :full_meaning, :upright, :reversed, :image)
         end
 
     end

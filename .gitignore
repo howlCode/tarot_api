@@ -25,3 +25,6 @@
 
 /config/credentials/production.key
 .ipynb_checkpoints/*
+
+node_modules/
+config/master.key
