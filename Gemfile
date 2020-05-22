@@ -36,6 +36,7 @@ gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
 gem 'rack-cors', :require => 'rack/cors'
 
 group :development, :test do
+  gem 'byebug'
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'rspec-rails'

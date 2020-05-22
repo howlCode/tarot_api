@@ -234,6 +234,7 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers
   bcrypt_pbkdf (>= 1.0, < 2.0)
+  byebug
   capistrano (~> 3.11)
   capistrano-passenger (~> 0.2.0)
   capistrano-rails (~> 1.4)
