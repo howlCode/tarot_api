@@ -7,7 +7,8 @@ class CreateCards < ActiveRecord::Migration[5.1]
       t.string :upright, null: false
       t.string :reversed, null: false
       t.string :image, null: false
-
+      t.integer :card_index, null: false
+      
       t.timestamps
     end
   end
