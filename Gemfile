@@ -41,7 +41,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   gem 'byebug'
   gem 'pry-byebug'
-  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'  
+  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
   gem 'pry-rails'
   gem 'rspec-rails'
   gem 'factory_bot_rails'
