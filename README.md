@@ -97,3 +97,5 @@ heroku run rails db:migrate
 heroku run rails read_cards:load_cards
 
 # Happy trails!
+
+RELEASED UNDER THE MIT LICENSE
