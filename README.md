@@ -91,6 +91,11 @@ rails server
 hit api at localhost:3000/api/v1
 ```
 
+# First deploy
+heroku run rails db:schema:load DISABLE_DATABASE_ENVIRONMENT_CHECK=1
+heroku run rails db:migrate
+heroku run rails read_cards:load_cards
+
 # Happy trails!
 
 Copyright 2020 howlCode

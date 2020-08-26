@@ -39,10 +39,9 @@ gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug'
   gem 'pry-byebug'
-  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'  
+  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
   gem 'pry-rails'
   gem 'rspec-rails'
   gem 'factory_bot_rails'

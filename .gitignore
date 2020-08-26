@@ -33,9 +33,17 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
+<<<<<<< HEAD
+/config/credentials/production.key
+.ipynb_checkpoints/*
+
+node_modules/
+config/master.key
+=======
 /public/packs
 /public/packs-test
 /node_modules
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+>>>>>>> develop
