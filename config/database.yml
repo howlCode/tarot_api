@@ -1,6 +1,6 @@
 production:
   adapter: postgresql
-  host: ''
+  host: ""
   database: tarot_api_production
   username: postgres
   password:
@@ -8,17 +8,17 @@ production:
   pool: 5
 
 development:
-  host: 'localhost'
+  host: localhost
   port: 5432
   adapter: postgresql
   database: tarot_api_dev
-  username: postgres
-  password: postgres
+  username: howlcode
+  password: howlcode
 
 test:
-  host: 'localhost'
+  host: localhost
   port: 5432
   adapter: postgresql
   database: tarot_api_test
-  username: postgres
-  password: postgres
+  username: howlcode
+  password: howlcode

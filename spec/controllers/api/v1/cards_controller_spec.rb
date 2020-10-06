@@ -5,7 +5,7 @@ RSpec.describe Api::V1::CardsController, type: :controller do
   let(:card) { create(:card) }
 
   let(:valid_attributes) {
-    { name: card.name, summary: card.summary, full_meaning: card.full_meaning, upright: card.upright, reversed: card.reversed, image: card.image }
+    { name: card.name, summary: card.summary, full_meaning: card.full_meaning, upright: card.upright, reversed: card.reversed, image: card.image, card_index: card.card_index }
   }
 
   let(:invalid_attributes) {

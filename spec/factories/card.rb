@@ -8,5 +8,6 @@ FactoryBot.define do
     upright { Faker::Books::Lovecraft.sentence }
     reversed { Faker::Books::Lovecraft.sentence }
     image { Faker::Internet.url }
+    card_index { 1 }
   end
 end
