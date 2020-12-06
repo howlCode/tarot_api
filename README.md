@@ -9,7 +9,7 @@ the cards has been pulled from https://www.simplytarot.com
 
 You may draw cards from the API using these unique endpoints:
 
-_URL: https://tarot.howlcode.com/api/v1_
+_URL: https://localhost:3000/api/v1_
 
 _Draw all the cards in order_
 
