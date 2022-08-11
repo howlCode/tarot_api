@@ -84,21 +84,25 @@ reversed
 ```
 clone repo
 bundle install
-rails db:create
-rails db:migrate
-rails read_cards:load_cards
-rails server
-hit api at localhost:3000/api/v1
+yarn install
+./bin/rails db:create
+./bin/rails db:migrate
+./bin/rails read_cards:load_cards
+./bin/dev
+API available at localhost:3000/api/v1
+simple index view (images) of all cards at root
 ```
 
-# First deploy
+# First deploy to Heroku
+```
 heroku run rails db:schema:load DISABLE_DATABASE_ENVIRONMENT_CHECK=1
 heroku run rails db:migrate
 heroku run rails read_cards:load_cards
+```
 
 # Happy trails!
 
-Copyright 2020 howlCode
+Copyright 2022 howlCode
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

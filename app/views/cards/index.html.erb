@@ -1,0 +1,16 @@
+<section class="cards-index">
+  <div class="cards-wrapper">
+  <% @cards.each do |card| %>
+    <%= link_to(card) do %>
+      <div class="card" style="background-image: url('<%= card.image %>')">
+        <div class="card__overlay">
+          <div class="card__inner">
+            <h6 class="card__inner--title"><%= card.name.titleize %></h6>
+            <p class="card__inner--summary"><%= card.summary %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+  </div>
+</section>

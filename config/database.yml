@@ -1,24 +1,15 @@
-production:
+defaults: &defaults
   adapter: postgresql
-  host: ""
-  database: tarot_api_production
-  username: postgres
-  password:
-  encoding: unicode
   pool: 5
+  encoding: unicode
+  username: mattking
+  password: 
+  host: localhost
 
 development:
-  host: localhost
-  port: 5432
-  adapter: postgresql
+  <<: *defaults
   database: tarot_api_dev
-  username: howlcode
-  password: howlcode
 
 test:
-  host: localhost
-  port: 5432
-  adapter: postgresql
+  <<: *defaults
   database: tarot_api_test
-  username: howlcode
-  password: howlcode

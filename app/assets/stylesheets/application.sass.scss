@@ -1,0 +1,10 @@
+// Entry point for your Sass build
+@import 'normalize.css';
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+$desktop: 1200px;
+$tablet: 1024px;
+$mobile: 600px;
+
+@import 'card.sass.scss';

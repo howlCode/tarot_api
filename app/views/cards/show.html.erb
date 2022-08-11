@@ -1,0 +1,11 @@
+<section class="cards-show">
+  <div class="card-show">
+    <div class="card-show__img-wrapper">
+      <img class="card-show__img" src="<%= @card.image %>">
+    </div>
+    <div class="card-show__info-wrapper">
+      <h4 class="card-show__title"><%= @card.name.titleize %></h4>
+      <p class="card-show__summary"><%= @card.full_meaning %></p>
+    </div>
+  </div>
+</section>

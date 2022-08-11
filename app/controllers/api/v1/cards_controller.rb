@@ -1,7 +1,7 @@
 module Api
   module V1
     class CardsController < ActionController::API
-      before_action :set_card, only: [:show, :update, :destroy]
+      before_action :set_card, only: %i[show update destroy]
 
       def index
         @cards = Card.all
@@ -35,14 +35,14 @@ module Api
       end
 
       private
-        def set_card
-          @card = Card.find_by(id: params[:id])
-        end
 
-        def card_params
-          params.require(:card).permit(:name, :summary, :full_meaning, :upright, :reversed, :image, :card_index)
-        end
+      def set_card
+        @card = Card.find_by(id: params[:id])
+      end
 
+      def card_params
+        params.require(:card).permit(:name, :summary, :full_meaning, :upright, :reversed, :image, :card_index)
+      end
     end
   end
 end

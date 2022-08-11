@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root 'cards#index'
   namespace :api do
     namespace :v1 do
       resources :cards
@@ -10,4 +11,6 @@ Rails.application.routes.draw do
       get 'spreads/celtic_cross' => "spreads#celtic_cross"
     end
   end
+
+  resources :cards, only: %i[index show]
 end

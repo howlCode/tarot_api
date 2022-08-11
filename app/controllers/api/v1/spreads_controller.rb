@@ -1,7 +1,6 @@
 module Api
   module V1
     class SpreadsController < ActionController::API
-
       def random_card
         @cards = Card.all
         @random_card = @cards.sample(1)
@@ -25,7 +24,6 @@ module Api
         @celtic_cross_cards = @cards.sample(10)
         render json: @celtic_cross_cards
       end
-
     end
   end
 end
