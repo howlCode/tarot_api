@@ -3,15 +3,15 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'rails', '~> 7.1.3.2'
 gem 'pg'
-gem 'puma', '~> 5.6'
+gem 'puma'
 gem "sassc-rails"
 gem 'jsbundling-rails'
-gem "cssbundling-rails", "~> 1.1"
+gem "cssbundling-rails"
 gem 'rack-cors', :require => 'rack/cors'
-gem 'bootsnap', '>= 1.4.2', require: false
+gem 'bootsnap', require: false
 
 group :development, :test do
-  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+  gem 'faker'
   gem 'rspec-rails'
   gem 'factory_bot_rails'
   gem 'database_cleaner'
