@@ -5,7 +5,7 @@
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
-    "esbuild": "^0.15.1",
+    "esbuild": "^0.25.0",
     "sass": "^1.54.4",
     "turbolinks": "^5.2.0"
   },
