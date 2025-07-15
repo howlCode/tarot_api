@@ -130,7 +130,7 @@ GEM
     mini_portile2 (2.8.8)
     minitest (5.25.2)
     msgpack (1.7.2)
-    net-imap (0.5.6)
+    net-imap (0.5.7)
       date
       net-protocol
     net-pop (0.1.2)
@@ -140,7 +140,7 @@ GEM
     net-smtp (0.5.0)
       net-protocol
     nio4r (2.7.4)
-    nokogiri (1.18.4)
+    nokogiri (1.18.8)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     pg (1.5.6)
@@ -152,7 +152,8 @@ GEM
     rack (3.1.16)
     rack-cors (2.0.2)
       rack (>= 2.0.0)
-    rack-session (2.0.0)
+    rack-session (2.1.1)
+      base64 (>= 0.1.0)
       rack (>= 3.0.0)
     rack-test (2.1.0)
       rack (>= 1.3)
