@@ -120,7 +120,8 @@ GEM
     loofah (2.23.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
-    mail (2.8.1)
+    mail (2.9.1)
+      logger
       mini_mime (>= 0.1.1)
       net-imap
       net-pop
@@ -130,14 +131,14 @@ GEM
     mini_portile2 (2.8.9)
     minitest (5.25.2)
     msgpack (1.7.2)
-    net-imap (0.5.14)
+    net-imap (0.6.7)
       date
       net-protocol
     net-pop (0.1.2)
       net-protocol
-    net-protocol (0.2.2)
+    net-protocol (0.3.0)
       timeout
-    net-smtp (0.5.0)
+    net-smtp (0.5.1)
       net-protocol
     nio4r (2.7.4)
     nokogiri (1.19.3)
